@@ -5,3 +5,4 @@ main
 *.jpeg
 *.avi
 *.mp4
+.DS_Store
