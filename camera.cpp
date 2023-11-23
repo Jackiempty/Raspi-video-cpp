@@ -25,5 +25,6 @@ int main(int, char**) {
         if (cv::waitKey(10) == 27)
             break;
     }
+imwrite("test.jpg", frame);
     return 0;
 }
