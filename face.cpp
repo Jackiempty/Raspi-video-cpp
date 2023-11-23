@@ -44,8 +44,8 @@ int main( int argc, const char** argv )
     double scale;
     cv::CommandLineParser parser(argc, argv,
         "{help h||}"
-        "{cascade|data/haarcascades/haarcascade_frontalface_alt.xml|}"
-        "{nested-cascade|data/haarcascades/haarcascade_eye_tree_eyeglasses.xml|}"
+        "{cascade|haarcascade_frontalface_alt.xml|}"
+        "{nested-cascade|haarcascade_eye_tree_eyeglasses.xml|}"
         "{scale|1|}{try-flip||}{@filename||}"
     );
     if (parser.has("help"))

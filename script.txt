@@ -10,7 +10,7 @@ video.cpp:
 g++ video.cpp -I/usr/local/include/opencv4 -o main -lopencv_core  -lopencv_highgui -lopencv_videoio -std=c++11 -Wl,-rpath,/usr/local/lib
 
 face.cpp:
-g++ face.cpp -I/usr/local/include/opencv4 -o main -lopencv_core  -lopencv_highgui -lopencv_videoio -lopencv_objdetect -lopencv_imgproc -std=c++11 -Wl,-rpath,/usr/local/lib
+g++ face.cpp -I/usr/local/include/opencv4 -o main -lopencv_core  -lopencv_highgui -lopencv_videoio -lopencv_objdetect -lopencv_imgproc -lopencv_imgcodecs -std=c++11 -Wl,-rpath,/usr/local/lib
 
 camera.cpp:
 g++ camera.cpp -I/usr/local/include/opencv4 -o main -lopencv_core  -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs  -std=c++11 -Wl,-rpath,/usr/local/lib
