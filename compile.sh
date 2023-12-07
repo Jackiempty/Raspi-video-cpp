@@ -9,3 +9,6 @@ g++ face.cpp -o face `pkg-config --cflags --libs opencv4` -std=c++11 -Wl,-rpath,
 
 # camera.cpp
 g++ camera.cpp -I/usr/local/include/opencv4 -o camera -lopencv_core  -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs  -std=c++11 -Wl,-rpath,/usr/local/lib
+
+# fall.cpp
+g++ fall.cpp -o main `pkg-config --cflags --libs opencv4` -std=c++11 -Wl,-rpath,/usr/local/lib

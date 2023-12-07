@@ -25,6 +25,10 @@ face:face.cpp
 camera:camera.cpp
 	$(CC) -o camera camera.cpp $(lib)
 
+.PHONY:fall
+fall:fall.cpp	
+	$(CC) -o fall fall.cpp $(lib)
+
 .PHONY:clean
 clean:
 	rm -rf $(exe)
