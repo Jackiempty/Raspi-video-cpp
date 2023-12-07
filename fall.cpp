@@ -16,7 +16,7 @@ int getIndex(vector<float>, float);
 int main()
 {
     bool fitToEllipse = false;
-    VideoCapture cap("queda.mp4"); // in linux check $ ls /dev/video0
+    VideoCapture cap(0); // in linux check $ ls /dev/video0
     if (!cap.isOpened()) {
         std::cerr << "ERROR: Could not open camera" << std::endl;
         return 1;
