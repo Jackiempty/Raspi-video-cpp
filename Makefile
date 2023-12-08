@@ -1,6 +1,6 @@
 CC:=g++
-obj:=image.cpp video.cpp face.cpp camera.cpp
-exe:= image video face camera
+obj:=image.cpp video.cpp face.cpp camera.cpp fall.cpp
+exe:= image video face camera fall
 lib:=-I/usr/local/include/opencv4 -lopencv_video -lopencv_core  -lopencv_highgui -lopencv_videoio -lopencv_objdetect -lopencv_imgproc -lopencv_imgcodecs -std=c++11 -Wl,-rpath,/usr/local/lib
 
 all:$(obj)
@@ -8,6 +8,7 @@ all:$(obj)
 	$(CC) -o video video.cpp $(lib)
 	$(CC) -o face face.cpp $(lib)
 	$(CC) -o camera camera.cpp $(lib)
+	$(CC) -o fall fall.cpp $(lib)
 
 .PHONY:image
 image:image.cpp
