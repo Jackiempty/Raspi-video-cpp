@@ -32,6 +32,7 @@ int main()
     Mat cnt;
     Moments M;
     Rect rect;
+    bool fall;
 
 
     while(true)
@@ -79,6 +80,7 @@ int main()
             if (j > 10)
             {   
                 rectangle(frame, rect, Scalar(0, 0, 225), 4);
+                fall = true;
                 // cout << "should draw now" << endl;
             }
 
@@ -86,6 +88,7 @@ int main()
             {
                 j = 0;
                 rectangle(frame, rect, Scalar(0, 225, 0), 2);
+                fall = false;
             }
 
             // cout << "x: " << rect.x << endl

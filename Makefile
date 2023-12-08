@@ -1,7 +1,7 @@
 CC:=g++
 obj:=image.cpp video.cpp face.cpp camera.cpp fall.cpp
 exe:= image video face camera fall
-lib:=-I/usr/local/include/opencv4 -lopencv_video -lopencv_core  -lopencv_highgui -lopencv_videoio -lopencv_objdetect -lopencv_imgproc -lopencv_imgcodecs -std=c++11 -Wl,-rpath,/usr/local/lib
+lib:=`pkg-config --cflags --libs opencv4` -std=c++11 -Wl,-rpath,/usr/local/lib
 
 all:$(obj)
 	$(CC) -o image image.cpp $(lib)
